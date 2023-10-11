@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n,m,i,j,ii,jj,k;
+    int n,m,i,j,t,k;
     scanf("%d %d",&n,&m);
     int nlist[n];
     for(k=1;k<=n;k++){
@@ -11,10 +11,9 @@ int main() {
         scanf("%d %d",&i,&j);
         i--;
         j--;
-        ii=nlist[j];
-        jj=nlist[i];
-        nlist[i]=ii;
-        nlist[j]=jj;
+        t=nlist[i];
+        nlist[i]=nlist[j];
+        nlist[j]=t;
     }
     for(int k=0;k<n;k++){
         printf("%d ",nlist[k]);
