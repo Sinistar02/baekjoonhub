@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n,m,i,j,t,ii,jj,k;
+    int n,m,i,j,ii,jj,k;
     scanf("%d %d",&n,&m);
     int nlist[n];
     for(k=1;k<=n;k++){
